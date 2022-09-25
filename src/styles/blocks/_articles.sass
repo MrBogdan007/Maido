@@ -1,8 +1,15 @@
 .article
    margin-bottom: 20px
-   padding-bottom: 200px
-   
+   padding-bottom: 40px
+   &-item:nth-child(2) &_wrap
+      margin-bottom: 100px
+   &-item:nth-child(3) &_wrap
+      margin-bottom: 95px
+   &-item:nth-child(5) &_wrap
+      margin-bottom: 25px
+      
    &-item
+      cursor: pointer 
       border-radius: 15px
       height: 470px
       display: flex
@@ -13,7 +20,8 @@
       color: #fff
       z-index: 5
       overflow: hidden
-      
+      &__h1:hover .rarr
+         display: block
       &__latin
          max-width: 300px
 
@@ -175,7 +183,9 @@
    &-button button:hover
       background-color: $color-apricot
       color: $font-black
+      cursor: pointer
    &-button button
+      letter-spacing: 0.2em
       width: 80%
       background-color: #363643
       padding: 30px 0
@@ -188,3 +198,4 @@
       font-size: 12px
    &-button
       text-align: center
+   
