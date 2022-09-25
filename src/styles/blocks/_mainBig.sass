@@ -1,0 +1,103 @@
+.mainBig
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   padding-bottom: 30px
+   &-block
+      position: relative
+      display: flex
+      justify-content: space-evenly
+      flex-direction: column
+      align-items: center
+      margin-top: 40px
+      border-radius: 25px
+      color: $font-grey
+      overflow: hidden
+      z-index: 1
+      font-family: $font-family-primary
+      &__h1:hover .rarr
+         display: block
+      &__h1
+         font-size: 45px
+         position: relative
+         max-width: 800px
+         font-family: $font-family-primary
+         font-weight: 900
+      small
+         
+      &__latin
+         display: block
+         font-size: 24px
+         max-width: 650px
+      &__small
+         color: $font-grey
+         display: block
+   &-block:nth-child(1)::after
+      z-index: -1
+      background-color: rgba(0, 0, 0, 0.3)
+      height: 100%
+      width: 100%
+      position: absolute
+      content: ""
+   &-block:nth-child(2) &-block__latin::before
+      border-top: solid 2px black
+      content: ""
+      padding: 15px
+      font-weight: 900
+      position: absolute
+      margin-top: -10px
+   &-block:nth-child(1) button
+      color: #fff
+   &-block:nth-child(3) button
+      color: #fff
+   &-block:nth-child(3) button:hover
+      background-color: #fff
+      color: #000
+   &-block:nth-child(1) button:hover
+      background-color: #fff
+      color: #000
+   &-block:nth-child(1)
+      background: url("../img/main/mainbig1.jpg") center
+      background-size: 100%
+      height: 550px
+   &-block:nth-child(2)::after
+      z-index: -1
+      background-color: rgba(254,214,114, 0.8)
+      height: 100%
+      width: 100%
+      position: absolute
+      content: ""
+   &-block:nth-child(2)
+      background: url("../img/main/mainbig2.jpg") center
+      background-size: 100%
+      color: $font-black
+      height: 670px
+   &-block:nth-child(2) button
+      color: #000
+      border: 1px solid black
+   &-block:nth-child(2) small
+      color: #000
+   &-block:nth-child(2) h1:hover .rarr
+      right: 30px
+      bottom: 0
+   &-block:nth-child(3)::after
+      z-index: -1
+      background-color: rgba(0, 0, 0, 0.3)
+      height: 100%
+      width: 100%
+      position: absolute
+      content: ""
+   &-block:nth-child(3)
+      background: url("../img/main/mainbig3.jpg") center
+      background-size: 100%
+      height: 600px
+   &-block:nth-child(3) h1:hover .rarr
+      right: 270px
+      bottom: 0
+   &-block:hover
+      transition: background-size 0.5s ease-in
+      cursor: pointer
+      background-size: 105%
+
+
+      

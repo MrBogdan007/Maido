@@ -1,0 +1,92 @@
+.header
+   display: flex
+   justify-content: space-between
+   align-items: center
+   margin-top: 80px  
+   padding-bottom: 80px
+   &__nav
+      z-index: 6
+      position: relative
+
+      & a:first-child::before
+         width: 4px
+         height: 4px
+         border-radius: 50%
+         background-color: #F4AD66
+         content: ""
+         padding: 1px
+         position: absolute
+         left: 47px
+         top: -1px
+
+      & a
+         font-family: $font-family-secondary
+         font-weight: 700
+         color: $font-color
+         text-decoration: none
+         position: relative
+         margin-right: 15px
+      & a:last-child svg
+         width: 17px
+         height: 17px
+         margin: 0 0 -3px 5px
+         list-style: none
+         fill: $font-color
+      &_m:hover::after
+         background-color: lighten(#000,40% )
+      &_m::after
+         width: 4px
+         height: 4px
+         border-radius: 50%
+         background-color: transparent
+         content: ""
+         padding: 1px
+         position: absolute
+         right: -6px
+         top: -1px
+
+   &__logo
+      z-index: 6
+      cursor: pointer
+   &__logo img
+      max-height: $logo
+      max-width: 100%
+   &-fixed
+      position: fixed
+      background-color: #262626
+      height: 54px
+      width: 100%
+      top: 0
+      left: 0
+      z-index: 5
+      display: flex
+      justify-content: space-between
+      align-items: center
+      border-bottom: 1px solid #000
+      z-index: 100
+   &-fixed__logo
+      cursor: pointer
+   &-fixed__logo
+      height: 18px
+      width: 152px
+      float: left
+      margin-left: 20px
+   &-fixed__button button
+      padding: 10px 20px
+      vertical-align: middle
+      border-radius: 4px
+      float: right
+      color: $font-color
+      background-color: #82b440
+      margin-right: 20px
+      
+   &-fixed__button button:hover
+      background:  darken(#82b440, 5%)
+      cursor: pointer
+   &-textFixed
+      position: fixed
+      top: 425px
+      left: -63px
+      color: #fff
+      font-size: 12px
+      transform: rotate(-90deg)

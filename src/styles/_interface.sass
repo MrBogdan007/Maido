@@ -1,0 +1,52 @@
+html
+    background-color: #252530
+    box-sizing: border-box
+body
+    font-family: 'Mulish', sans-serif
+    margin: 0
+    padding: 0
+h3
+    padding: 0
+    margin: 0
+   
+.button
+   border-radius: 10px
+   border: none
+   padding: 3px 10px
+   font-size: 8px
+   font-weight: 900
+   letter-spacing: 0.1em
+   &_hollow
+      background-color: transparent
+      border: 1px solid #fff
+      
+      padding: 4px 12px
+      text-transform: uppercase
+.rarr
+   display: none
+   position: absolute
+   bottom: 0
+   right: -30px
+.button_dark:hover
+   background-color: darken(#fff, 15%)
+   color: #000
+   cursor: pointer
+.button_light:hover
+   background-color: lighten(#000, 15% )
+   color: rgb(254,214,114) !important
+   cursor: pointer
+.text_dark
+      color: #000 !important
+      z-index: 5
+.small h1
+   font-family: $font-family-primary
+   max-width: 300px
+   font-size: 25px
+.big .article-item__latin
+   max-width: 400px
+.small .article-item__latin
+   max-width: 200px
+.big h1
+   font-family: $font-family-primary
+   max-width: 500px
+   font-size: 30px

@@ -1,0 +1,190 @@
+.article
+   margin-bottom: 20px
+   padding-bottom: 200px
+   
+   &-item
+      border-radius: 15px
+      height: 470px
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+      position: relative
+      color: #fff
+      z-index: 5
+      overflow: hidden
+      
+      &__latin
+         max-width: 300px
+
+      
+   &-block
+      display: grid
+      grid-template-columns: repeat(6, 1fr)
+      gap: 1.5em
+
+   &-header
+      text-align: center
+      color: #fff
+      font-weight: 600
+      font-size: 12px
+      padding-bottom: 20px
+
+   &-item:nth-child(1) button:hover
+      background-color: #000
+      color: $color-thistle
+      cursor: pointer
+   &-item:nth-child(1) button
+      color: #333350
+      border: 1px solid black
+   &-item:nth-child(2) button:hover
+      background-color: #000
+      color: $color-apricot
+      cursor: pointer
+   &-item:nth-child(2) button
+      color: #333350
+      border: 1px solid black
+   &-item:nth-child(3) button:hover
+      background-color: #fff
+      color: #000
+      cursor: pointer
+   &-item:nth-child(3) button
+      color: $font-color
+      border: 1px solid white
+   &-item:nth-child(5) button:hover
+      background-color: #fff
+      color: #000
+      cursor: pointer
+   &-item:nth-child(5) button
+      color: $font-color
+      border: 1px solid white
+   &-item:nth-child(4) button:hover
+      background-color: #000
+      color: $color-cerise
+      cursor: pointer
+   &-item:nth-child(4) button
+      color: #333350
+      border: 1px solid black
+   &-item:nth-child(1)
+      grid-row: span 3
+      grid-column: span 3
+      background: url("../img/articles/article1.jpg") center
+      background-size: 100%
+      position: relative
+   &-item:nth-child(1)::before
+      z-index: -1
+      background-color: rgba($color-thistle, 0.8)
+      height: 100%
+      width: 100%
+      position: absolute
+      content: ""
+
+   &-item:nth-child(2)
+      grid-row: span 3
+      grid-column: span 3
+      background: url("../img/articles/article2.jpg") center
+      background-size: 100%
+   &-item:nth-child(2)::before
+      z-index: -1
+      background-color: rgba($color-apricot, 0.8)
+      height: 100%
+      width: 100%
+      position: absolute
+      content: ""
+   &-item:nth-child(3)::before
+      content: ""
+      position: absolute
+      z-index: -1
+      background-color: rgba(0, 0, 0, 0.2)
+      height: 100%
+      width: 100%
+   &-item:nth-child(4)::before
+      content: ""
+      position: absolute
+      z-index: -1
+      background-color: rgba($color-cerise, 0.8)
+      height: 100%
+      width: 100%
+   &-item:nth-child(5)::before
+      content: ""
+      position: absolute
+      z-index: -1
+      background-color: rgba(0, 0, 0, 0.2)
+      height: 100%
+      width: 100%
+   &-item:nth-child(2) h1
+      color: $font-black
+   &-item:nth-child(2) &-item__author
+      color: $font-black
+   &-item:nth-child(1) &-item__author
+      margin-top: 35px
+   &-item:nth-child(1) &-item__latin::before
+      border-top: solid 1px black
+      content: ""
+      padding: 10px
+      position: absolute
+      margin-top: -10px
+   &-item:nth-child(4) &-item__latin::before
+      border-top: solid 1px black
+      content: ""
+      padding: 10px
+      position: absolute
+      margin-top: -10px
+   &-item:nth-child(5) &-item__latin::before
+      border-top: solid 1px white
+      content: ""
+      padding: 10px
+      position: absolute
+      margin-top: -10px
+
+   &-item:nth-child(1) h1
+      color: $font-black
+   &-item:nth-child(4) h1
+      color: $font-black
+   &-item:nth-child(4) &-item__author
+      margin-top: 30px
+   &-item:nth-child(5) &-item__author
+      margin-top: 25px
+   &-item:nth-child(3) h1
+      color: $font-color
+   &-item:nth-child(5) h1
+      color: $font-color
+   &-item:nth-child(3)
+      grid-row: span 2
+      grid-column: span 2
+      background: url("../img/articles/article3.jpg") center no-repeat
+      background-size: 100%
+   &-item:nth-child(4)
+      grid-row: span 2
+      grid-column: span 2
+      background: url("../img/articles/article4.jpg") center no-repeat
+      background-size: 200%
+      
+   &-item:nth-child(5)
+      grid-row: span 2
+      grid-column: span 2
+      background: url("../img/articles/article5.jpg") center no-repeat
+      background-size: 100%
+   &-item:nth-child(4):hover
+      transition: background-size 0.5s ease-in
+      background-size: 210%
+      cursor: pointer
+   &-item:hover
+      transition: background-size 0.5s ease-in
+      background-size: 105%
+   &-button button:hover
+      background-color: $color-apricot
+      color: $font-black
+   &-button button
+      width: 80%
+      background-color: #363643
+      padding: 30px 0
+      border-radius: 10px
+      font-family: $font-family-secondary
+      font-weight: 900
+      color: #fff
+      text-transform: uppercase
+      margin-top: 35px
+      font-size: 12px
+   &-button
+      text-align: center
